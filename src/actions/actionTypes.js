@@ -1,0 +1,12 @@
+export const FILTER_RATING = 'FILTER_RATING'
+export const RECEIVE_FORM = 'RECEIVE_FORM'
+export const DELETE_USER = 'DELETE_USER'
+export const RECEIVE_GIFFIES = 'RECEIVE_GIFFIES'
+export const FETCH_GIFFIES_ERROR = 'FETCH_GIFFIES_ERROR'
+export const RECEIVE_ONE_GIF = 'RECEIVE_ONE_GIF'
+
+
+
+
+
+
