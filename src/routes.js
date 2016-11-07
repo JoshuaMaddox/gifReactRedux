@@ -5,7 +5,7 @@ import GiffyPage from './components/GiffyPage'
 import SingleGif from './components/SingleGif'
 
 export default (
-  <Route path="/" component={Layout}>
-    <Route path="gif/:id" component={SingleGif} />
+  <Route path="gifReactRedux/" component={Layout}>
+    <Route path="gifReactRedux/gif/:id" component={SingleGif} />
   </Route>
 )
