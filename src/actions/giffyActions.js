@@ -40,7 +40,7 @@ function fetchGiffiesError(err) {
 export function fetchGiffy(searchString) {
   let newSearchString = searchString.split('').join('+')
   return dispatch => {
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${newSearchString}&api_key=dc6zaTOxFJmzC`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${newSearchString}&api_key=dc6zaTOxFJmzC`)
       .then(res => res.data)
       .then(giffies => {
         console.log(giffies)
@@ -54,7 +54,7 @@ export function fetchGiffy(searchString) {
 
 export function getOneGif(id) {
   return dispatch => {
-    axios.get(`http://api.giphy.com/v1/gifs/${id}?api_key=dc6zaTOxFJmzC`)
+    axios.get(`https://api.giphy.com/v1/gifs/${id}?api_key=dc6zaTOxFJmzC`)
       .then(gif => {
         console.log('I am the single gif', gif.data.data)
         dispatch(receiveOneGif(gif.data.data))
