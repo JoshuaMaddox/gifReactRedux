@@ -18,6 +18,7 @@ class Layout extends Component {
       <div>
         <h1>Giffy Finder</h1>
         <GiffyPage />
+        {this.props.children}
       </div>
     )
   }
