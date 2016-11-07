@@ -76,7 +76,7 @@ class GiffyPage extends Component {
 
   
     return(
-      <div>
+      <div className='mainContainer'>
       <form onSubmit={this.sendSearch}>
         <input ref='searchQuery' type="text" placeholder='searchQuery'/>
         <button type='submit'>submit</button> 
